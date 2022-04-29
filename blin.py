@@ -13,6 +13,8 @@ def get_bouillon():
     for dish in dishes:
         if 'суп' in dish.text.lower():
             bouillon = dish.text.strip()
+        else:
+            bouillon = 'Супы сегодня не обнаружены. Ну или там просто борщ.'
 
     return bouillon
 
